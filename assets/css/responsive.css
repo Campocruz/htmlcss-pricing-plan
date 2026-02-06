@@ -1,9 +1,33 @@
 /* Media query tablet */
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 555px) {
+  .row .col:last-child .list_card {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
 
+      >li {
+        width: calc(100%/2);
+      }
+    }
+  }
 }
 
 /* Media query desktop */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 812px) {
+  .row .col:last-child .list_card {
+    display: block;
+    margin: 1rem 0;
+    justify-self: left;
+    font-size: 1.1rem;
 
+    >ul {
+      list-style: none;
+      line-height: 2em;
+
+      >li {
+        width: 100%;
+      }
+    }
+  }
 }
